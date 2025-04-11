@@ -34,14 +34,19 @@ body {
 }
 
 .introduction {
-    display: flex;
-    flex-direction: column;
     padding: 1%;
     width: 90%;
     font-size: 1.25em;
     border-left: solid;
     border-color: #ba742c;
-    justify-content: space-between;
+}
+
+.information {
+    padding: 1%;
+    width: 90%;
+    font-size: 1.25em;
+    border-left: solid;
+    border-color: #ba742c;
 }
 
 .otherinfo {
@@ -61,5 +66,14 @@ body {
     padding: 1%;
     width: 50%;
     border-left: solid;
+    border-color: #ba742c;
+}
+
+.projectlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border: solid;
     border-color: #ba742c;
 }
