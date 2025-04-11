@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    background-color: #1d2431;
+    color: #e1d9ca;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-left: 10%;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.sectionheader {
+    width: fit-content;
+    height: auto;
+    line-height: 50%;
+    font-size: 3em;
+    position: relative;
+}
+
+.caption {
+    width: fit-content;
+    position: absolute;
+    font-size: 0.5em;
+    color: #c4b69f;
+    right: 3%;
+    bottom: -5%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 90%;
+    font-size: 1.25em;
+    border-left: solid;
+    border-color: #ba742c;
+    justify-content: space-between;
+}
+
+.otherinfo {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25em;
+    justify-content: space-between;
+}
+
+.languages {
+    padding: 1%;
+    border-left: solid;
+    border-color: #ba742c;
+}
+
+.recentactivities {
+    padding: 1%;
+    width: 50%;
+    border-left: solid;
+    border-color: #ba742c;
+}
