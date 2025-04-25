@@ -108,3 +108,10 @@ header {
     border-color: #101722;
     background-color: #151c29;
 }
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: fit-content;
+}
