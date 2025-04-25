@@ -79,14 +79,19 @@ header {
     flex-direction: column;
     justify-content: space-around;
     width: 75%;
-    height: 100%;
+    height: 65%;
     align-self: center;
     justify-self: center;
     margin-bottom: 5%;
 }
 
-.introduction, .description {
+.introduction {
     font-size: 1.25em;
+}
+
+.description {
+    font-size: 1.25em;
+    height: 15%;
 }
 
 .text_align_right {
@@ -97,8 +102,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 50%;
     justify-content: space-between;
-    row-gap: 15px;
+    row-gap: 5px;
 }
 
 .project {
@@ -112,6 +118,8 @@ header {
 .contact_form {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 500px;
     height: fit-content;
 }
+
+
