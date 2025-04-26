@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <div class="page_border">
+            <img class="star_corner_element" src="star_corner_element.svg"/>
+        </div>
+        <header>
+            <div class="title_and_subtitle">
+                <div class="title">Contact</div>
+                <div class="subtitle">Email Form</div>
+            </div>
+            <navbar class="navbar_upper">
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li id="current_page"><a href="contact.html">Contact</a></li>
+                </ul>
+            </navbar>
+        </header>
+        <div class="page_contents">
+            <div class="description">
+                <h3>Want to Contact Me?</h3>
+                <p>If you have any questions for me or you'd like to learn more about a project, 
+                    please fill out the form below. I'll get back to you as soon as I can. </p>
+            </div>
+                <form class="contact_form" name="emailform" action="https://formspree.io/f/movdvegn" method="POST">
+                    <input type="text" name="name" placeholder="Name" class="email_form_input" required>
+                    <input type="email" name="email" placeholder="Email" class="email_form_input" required>
+                    <textarea name="message" placeholder="Message" class="email_form_message" required></textarea>
+                    <button type="submit">SEND</button>
+                </form>                
+        </div>
+    </div>
+</body>
+</html>

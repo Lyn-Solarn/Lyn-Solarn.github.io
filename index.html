@@ -3,67 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Solarn</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container"> 
-        <div class="sectionheader">
-            <h1>SOLARN</h1>
-            <div class="caption">
-                <p>Computer Science Undergraduate</p>
-            </div>
+    <div class="page">
+        <div class="page_border">
+            <img class="star_corner_element" src="star_corner_element.svg"/>
         </div>
-        
-        <div class="introduction">
-            <p>I am a College Student currently pursuing my bachelors. This website holds all the documentation of projects I’m working on as well as any future ideas I plan to explore. </p>
-            <p>At the moment, this site is still a work in progress. There may be bugs here are there, but they will be plenty of updates as I continue my academic and professional journey.</p>
-        </div>
-    
-        <div class="otherinfo">
-            <div class="languages">
-                <h2>Programming Languages</h2>
-                <p>C++ | Java | Python | SQL | HTML | CSS | JavaScript</p>
+        <header>
+            <div class="title_and_subtitle">
+                <div class="title">SOLARN</div>
+                <div class="subtitle">Computer Science Undergraduate</div>
             </div>
-            <div class="recentactivities">
-                <h2>Recent Activities</h2>
+            <navbar class="navbar_upper">
                 <ul>
-                    <li>3-21-2025 | Designing this site as well as working on school projects</li>
-                    <li>12-16-2003 | Being born</li>
-                    <li>??-??-???? | Not being born... Probably...</li>
+                    <li id="current_page"><a href="index.html">Introduction</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </navbar>
+        </header>
+        <div class="page_contents">
+            <div class="introduction">
+                <h2>Hello!</h2>
+                <p>Welcome to my portfolio where you can find current projects I’m working on as well as research I’ve done for future ones.
+                     This site is not just to show my work, but to provide a resource for others who want to create similar projects. </p>
+                <p>If you have any questions, feel free to contact me by filling out the email form located in the <b><a href="contact.html">Contact</a></b> section.</p>
             </div>
         </div>
-    </div>
-
-    <div class="container"> 
-        <div class="sectionheader">
-            <h1>PROJECTS</h1>
-            <div class="caption">
-                <p>Current & Future</p>
-            </div>
-        </div>
-        
-        <div class="information">
-            <p>Placeholder text that will soon display information about the selected project.</p>
-        </div>
-    
-        <div class="projectlist">
-            <div class="project">
-                <p>Test</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container"> 
-        <div class="sectionheader">
-            <h1>CONTACT</h1>
-            <div class="caption">
-                <p>Socials & Email</p>
-            </div>
-        </div>
-        
-    
     </div>
 </body>
 </html>
