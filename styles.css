@@ -106,6 +106,14 @@ header {
     float: left;
 }
 
+.navbar_upper li a {
+    color: #bbb09e;
+}
+
+#current_page a {
+    color: #e1d9ca;
+}
+
 .page_contents {
     display: flex;
     flex-direction: column;
