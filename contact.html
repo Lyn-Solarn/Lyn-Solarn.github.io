@@ -8,10 +8,13 @@
 </head>
 <body>
     <div class="page">
+        <div class="page_border">
+            <img class="star_corner_element" src="star_corner_element.svg"/>
+        </div>
         <header>
             <div class="title_and_subtitle">
                 <div class="title">Contact</div>
-                <div class="subtitle">Email & Socials</div>
+                <div class="subtitle">Email Form</div>
             </div>
             <navbar class="navbar_upper">
                 <ul>
@@ -22,16 +25,17 @@
             </navbar>
         </header>
         <div class="page_contents">
-            <div class="contact_form">
-                <h2>Email Form</h2>
-                <form>
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <input type="text" name="_subject" placeholder="Subject" required>
-                    <textarea name="Message" placeholder="Message" required></textarea>
+            <div class="description">
+                <h3>Want to Contact Me?</h3>
+                <p>If you have any questions for me or you'd like to learn more about a project, 
+                    please fill out the form below. I'll get back to you as soon as I can. </p>
+            </div>
+                <form class="contact_form" action="https://formspree.io/f/movdvegn" method="POST">
+                    <input type="text" name="Name" placeholder="Name" class="email_form_input" required>
+                    <input type="email" name="Email" placeholder="Email" class="email_form_input" required>
+                    <textarea name="Message" placeholder="Message" class="email_form_message" required></textarea>
                     <button type="submit">SEND</button>
                 </form>                
-            </div>
         </div>
     </div>
 </body>
