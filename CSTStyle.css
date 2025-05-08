@@ -81,18 +81,85 @@ body {
     transition: 0.8s ease-in;
 }
 
-.image_row {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 100px;
-    align-items: center;
+/* IMAGES */
+img {
+    border: solid;
+    border-color: #f9564f;
 }
 
-.image_row img {
-    border: solid;
-    border-color: #b33f62;
+.img_connector {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -1000px;
+    width: 1000px;
+    height: 10px;
+    background-color: #f9564f;
+    z-index: -1;
 }
+
+#first_web {
+    position: absolute;
+    top: -75px;
+    right: -900px;
+    
+}
+
+#first_photo {
+    position: absolute;
+    top: -50px;
+    right: -450px;
+}
+
+#batman {
+    position: absolute;
+    top: -50px;
+    right: -850px;
+}
+
+#k10k {
+    position: absolute;
+    top: -130px;
+    right: -750px;
+}
+
+#pixelsurgeon {
+    position: absolute;
+    top: -80px;
+    right: -600px;
+}
+
+#million_dollar {
+    position: absolute;
+    top: -100px;
+    right: -550px;
+}
+
+#dribbble {
+    position: absolute;
+    top: -100px;
+    right: -900px;
+}
+
+#flat_design {
+    position: absolute;
+    top: 1px;
+    right: -900px;
+}
+
+#bits_bytes {
+    position: absolute;
+    top: -80px;
+    right: -700px;
+}
+
+#dark_mode {
+    position: absolute;
+    top: -155px;
+    right: -900px;
+}
+
+
 
 .era_name {
     position: relative;
