@@ -162,6 +162,7 @@ header {
 .contact_form {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: space-between;
     margin-top: 6%;
     width: 35%;
@@ -209,3 +210,8 @@ header {
     font-weight: bold;
     color: #e1d9ca;
 }
+=======
+    width: 500px;
+    height: fit-content;
+}
+>>>>>>> CST302_Project
