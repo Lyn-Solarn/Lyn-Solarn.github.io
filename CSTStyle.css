@@ -1,0 +1,205 @@
+body {
+    background-color: #0d1821;
+    color: #0d1821;
+}
+
+.section_title {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 5%;
+    width: 1750px;
+    height: 100px;
+}
+
+.section_title h1 {
+    padding-top: 15px;
+    font-size: 50px;
+    line-height: 0.8;
+}
+
+.section_title p {
+    color: #fffbf3;
+    padding-left: 300px;
+    font-size: 20px;
+}
+
+.section_title::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    width: 1000px;
+    height: 75%;
+    background-color: #f3c677;
+    transform: skew(-25deg);
+    z-index: -1;
+}
+
+.section_title::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 350px;
+    width: 750px;
+    height: 100%;
+    background-color: #b33f62;
+    transform: skew(-25deg);
+    z-index: -2;
+}
+
+.collapsible {
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 925px;
+    font-size: 75px;
+    border: none;
+    outline: none;
+    color: #f3c677;
+    background-color: transparent;
+  }
+
+.collapsible::after {
+    content: '\002B';
+    font-weight: bold;
+}
+
+.active:after {
+    content: "\2212";
+  }
+
+.content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.content.open {
+    position: relative;
+    max-height: 10017.08px;
+    transition: 0.8s ease-in;
+}
+
+/* IMAGES */
+img {
+    border: solid;
+    border-color: #f9564f;
+}
+
+.img_connector {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -1000px;
+    width: 1000px;
+    height: 10px;
+    background-color: #f9564f;
+    z-index: -1;
+}
+
+#first_web {
+    position: absolute;
+    top: -75px;
+    right: -900px;
+    
+}
+
+#first_photo {
+    position: absolute;
+    top: -50px;
+    right: -450px;
+}
+
+#batman {
+    position: absolute;
+    top: -50px;
+    right: -850px;
+}
+
+#k10k {
+    position: absolute;
+    top: -130px;
+    right: -750px;
+}
+
+#pixelsurgeon {
+    position: absolute;
+    top: -80px;
+    right: -600px;
+}
+
+#million_dollar {
+    position: absolute;
+    top: -100px;
+    right: -550px;
+}
+
+#dribbble {
+    position: absolute;
+    top: -100px;
+    right: -900px;
+}
+
+#flat_design {
+    position: absolute;
+    top: 1px;
+    right: -900px;
+}
+
+#bits_bytes {
+    position: absolute;
+    top: -80px;
+    right: -700px;
+}
+
+#dark_mode {
+    position: absolute;
+    top: -155px;
+    right: -900px;
+}
+
+
+
+.era_name {
+    position: relative;
+    height: fit-content;
+    margin-left: 45px;
+}
+
+.era_name::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    width: 750px;
+    height: 125%;
+    background-color: #f3c677;
+    transform: skew(-25deg);
+    z-index: -1;
+}
+
+.event {
+    position: relative;
+    width: 750px;
+    height: fit-content;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    padding-top: 2px;
+}
+
+.event ul {
+    font-size: 18px;
+}
+
+.event::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    width: 850px;
+    height: 125%;
+    background-color: #f9564f;
+    transform: skew(-25deg);
+    z-index: -1;
+}
