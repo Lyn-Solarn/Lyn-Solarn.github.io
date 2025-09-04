@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.nav-button {
+    color: black;
+}

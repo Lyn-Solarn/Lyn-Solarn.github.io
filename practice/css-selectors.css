@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+#seasons-header {
+    color: yellow; 
+    text-align: center; 
+    font-family: 'Pacifico', cursive; 
+    font-size: max(2vw, 7vw); 
+    margin: 0 auto;
+}
+
+.figure-container {
+    display: flex; 
+    justify-content: center
+}
+
+figure {
+    text-align: center; 
+    width: 40%;
+}
+
+.figure-img {
+    border: 1px solid yellow;
+    width: 100%;
+    height: auto
+}
+
+#top-left-img {
+    border-top-left-radius: 25px; 
+}
+
+#top-right-img {
+    border-top-right-radius: 25px; 
+}
+
+#bottom-left-img {
+    border-bottom-left-radius: 25px; 
+}
+
+#bottom-right-img {
+    border-bottom-right-radius: 25px; 
+}
+
+figcaption {
+    color: white; 
+    font-size: max(2vw, 4vw);
+}
+
+hr {
+    width: 75%; 
+    margin-top: 20px
+}
+
+footer {
+    font-size: 3vw; 
+    color: silver;
+    text-align: center; 
+    padding-top: 10px;
+}
+
+#csumb-logo {
+    width: 15%;
+}
