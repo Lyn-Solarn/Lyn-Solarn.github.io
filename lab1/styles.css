@@ -1,0 +1,153 @@
+header {
+    padding: .25%;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: rgb(78, 78, 78);
+}
+
+header h1 {
+    margin: 0px;
+    color: white;
+}
+
+header hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(156, 156, 156);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 5px;
+    color: black;
+    border: outset rgb(51, 51, 51);
+    background-color: rgb(168, 168, 168);
+}
+
+.nav-button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.nav-button:active {
+    border: inset rgb(19, 19, 19);
+    background-color: rgb(131, 131, 131);
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+.main-content {
+    background-image: url("img/stone_brick_texture.jpg");
+}
+
+#team-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#team-photos figure {
+    padding: 0.50%;
+    padding-bottom: 0.40%;
+    border: .35vw solid rgb(218, 192, 152);
+    background-color: rgb(131, 62, 48);
+}
+
+#team-photos img {
+    width: max(15vw, 25vw);
+}
+
+#team-photos figcaption {
+    text-align: center;
+    font-size: max(1.5vw, 1vw);
+    color: rgb(255, 245, 224);
+    background-color: rgb(105, 44, 32);
+}
+
+#welcome-and-quote {
+    padding: 0.15% 1%;
+    width: fit-content;
+    margin: 0.25% auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: max(1vw, 2vw);
+    background-image: url("img/sign_texture.jpg");
+    background-position: center center;
+}
+
+#about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#hobbies-container {
+    width: 35%;
+    padding: 0.15% 1%;
+    padding-bottom: 1%;
+    margin: 1% auto;
+    font-size: 1vw;
+    background-image: url("img/sign_texture.jpg");
+    background-position: center center;
+}
+
+#about-page ul {
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#xp-table {
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#xp-table th {
+    color: white;
+    background-color: #4C6444;
+    border: solid #102820;
+}
+
+#xp-table td {
+    font-weight: bold;
+    background-color: #8A6240;
+    border: solid #4D2D18;
+}
+
+#google-form {
+    display: flex;
+    margin: 1% auto;
+    justify-content: center;
+}
+
+iframe {
+    width: 50%;
+    height: 91vh;
+    border-style: none;
+}
+
+footer {
+    padding-bottom: .05%;
+    text-align: center;
+    background-color: lightgray;
+}
