@@ -1,0 +1,72 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-image: url('img/wallpaper_minecraft_caves_cliffs\(part2\)_1920x1080.png');
+    background-size: cover;
+}
+
+#page-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+    height: 85%;
+    text-align: center;
+    border: solid rgb(206, 235, 255);
+    background-color: rgba(206, 235, 255, 0.45);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    width: 98%;
+    margin: 0.75vw auto;
+    padding-bottom: 1%;
+    border: solid rgb(206, 235, 255);
+    background-color: rgba(206, 235, 255, 0.45);
+    backdrop-filter: blur(5px);
+}
+
+button {
+    padding: 0.5%;
+    border: solid rgb(32, 73, 100);
+    background-color: rgb(206, 235, 255);
+}
+
+button:hover {
+    background-color: rgb(172, 215, 243);
+}
+
+#current-page {
+    background-color: rgb(172, 215, 243);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.topics-card {
+    width: 75%;
+    margin: 5px auto;
+    font-size: 1.5vh;
+    border: solid rgb(32, 73, 100);
+    background-color: rgba(206, 235, 255, 0.45);
+    backdrop-filter: blur(5px);
+}
+
+#component-image {
+    margin: 0 auto;
+    max-width: 45%;
+    min-width: 45%;
+}
+
+#reference {
+    margin: auto;
+    width: fit-content;
+    color: rgb(206, 235, 255);
+    background-color: rgb(32, 73, 100);
+}
