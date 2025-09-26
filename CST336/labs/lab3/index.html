@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <title>Lab 3: Minecraft Quiz</title>
+</head>
+<body>
+    <h1>Minecraft Quiz</h1>
+
+    <p id="question1">1. What item do you use to open the End Portal?</p>
+    <label>
+        <input type="radio" name="q1" value="eyeofender"> Eye of Ender
+    </label>
+    <label>
+        <input type="radio" name="q1" value="tnt"> TNT
+    </label>
+    <label>
+        <input type="radio" name="q1" value="enderpearl"> Ender Pearl
+    </label>
+
+    <p id="question2">2. What's the name of the main character?</p>
+    <label>
+        <input type="text" id="q2">
+    </label>
+
+    <p id="question3">3. Which of these entities explode?</p>
+    <label>
+        <select id="q3">
+            <option value="default">Pick an Entity</option>
+            <option value="sheep">Sheep</option>
+            <option value="enderman">Enderman</option>
+            <option value="creeper">Creeper</option>
+            <option value="parrot">Parrot</option>
+        </select>
+    </label>
+    
+    <p id="question4">4. How many blocks can be in a stack?</p>
+    <label>
+        <input type="number" id="q4" min="1" max="100">
+    </label>
+
+    <p id="question5">5. What is a famous line from the Minecraft Movie?</p>
+    <label>
+        <input type="checkbox" id="steve" value="correct"> "I am Steve."
+    </label>
+    <label>
+        <input type="checkbox" id="nameissteve" value="wrong"> "My name is Steve."
+    </label>
+    <label>
+        <input type="checkbox" id="chickenjockey" value="correct"> "Chicken Jockey."
+    </label>
+    <label>
+        <input type="checkbox" id="minecraft" value="wrong"> "Together we are Minecraft!"
+    </label>
+
+    <br>
+
+    <button>Submit Quiz</button>
+
+    <h2 id="totalscore"></h2>
+</body>
+</html>
