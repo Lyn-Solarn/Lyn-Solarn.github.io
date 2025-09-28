@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-image: url("../images/wallpaper_minecraft_caves_cliffs\(part2\)_1920x1080.png");
+}
+
+header {
+    width: 45%;
+    margin: 0 auto;
+    border: solid rgb(1, 63, 1);
+    background-color: green;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+#quiz {
+    width: 44%;
+    margin: 0 auto;
+    padding: .5%;
+    font-weight: bold;
+    border: solid rgb(97, 64, 15);
+    background-color: rgb(138, 101, 45);
+}
+
+.question {
+    margin: 15px auto;
+    width: fit-content;
+    background-color: rgba(255, 214, 161, 0.75);
+}
+
+button {
+    margin-top: 2%;
+    font-weight: bold;
+    border-color: rgb(202, 202, 202);
+    background-color: rgb(202, 202, 202);
+}
+
+button:hover {
+    border-color: rgb(215, 215, 215);
+    background-color: rgb(215, 215, 215);
+}
+
+button:active {
+    border-color: rgb(155, 155, 155);
+    background-color: rgb(155, 155, 155);
+}
+
+#score {
+    width: 45%;
+    margin: 0 auto;
+    border: solid rgb(155, 155, 155);
+    background-color: rgb(202, 202, 202);
+}

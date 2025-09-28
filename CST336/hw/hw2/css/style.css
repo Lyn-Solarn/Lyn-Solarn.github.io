@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/casino_background.jpg");
+    background-position: center top;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 15px;
+}
+
+#infoContainer {
+    width: 25%;
+    margin: 0 auto;
+    padding: 5px;
+    border: solid rgb(210, 0, 0);
+    background-color: rgb(250, 243, 205);
+}
+
+#results {
+    font-weight: bold;
+}
+
+#resetBtn {
+    border: solid rgb(88, 4, 4);
+    color: rgb(205, 85, 85);
+    background-color: rgb(141, 14, 14);
+}
+
+#resetBtn:hover {
+    color: rgb(255, 211, 211);
+}
+
+#slotMachine {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    border: solid rgb(210, 0, 0);
+    background-color: rgb(250, 243, 205);
+}
+
+#symbols {
+    width: fit-content;
+    margin: 25% auto;
+    font-size: 3vw;
+    background-color: rgb(255, 229, 83);
+}
+
+#betBox {
+    font-weight: bold;
+}
+
+#bet {
+    width: 75px;
+}
+
+#spinBtn {
+    font-weight: bold;
+    box-shadow: 0 0 20px 5px rgb(255, 232, 100);
+    border: 2px solid goldenrod;
+    color: rgb(124, 3, 3);
+    background-color: gold;
+}
+
+#spinBtn:hover {
+    box-shadow: 0 0 25px 10px gold;
+    border: 2px solid gold;
+    background-color: rgb(255, 228, 78);
+}
