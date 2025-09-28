@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2 - JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div id="infoContainer">
+            <h1>Slot Machine</h1>
+            <h2>$<span id="money"></span></h2>
+            <p id="results"></p>
+            
+            <br>
+            
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        
+        <div id="slotMachine">
+            <div id="legend">
+                <p>🍋🍋🍋 = x2</p>
+                <p>🍇🍇🍇 = x5</p>
+                <p>🍒🍒🍒 = x10</p>
+                <p>🍀🍀🍀 = x20</p>
+                <p>💎💎💎 = x50</p>
+            </div>
+
+            <div>
+                <p id="symbols">[ ][ ][ ]</p>
+
+                <label id="betBox">
+                    Bet: 
+                    <input id="bet" type="number" min="1">
+                </label>
+                <button id="spinBtn">Spin!</button>
+                
+                <p id="feedback"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

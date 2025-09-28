@@ -4,61 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
     <title>Lab 3: Minecraft Quiz</title>
 </head>
 <body>
-    <h1>Minecraft Quiz</h1>
+    <header>
+        <h1>Minecraft Quiz</h1>
+        <h2>Quiz taken <span id="quizCount"></span> times.</h2>
+    </header>
 
-    <p id="question1">1. What item do you use to open the End Portal?</p>
-    <label>
-        <input type="radio" name="q1" value="eyeofender"> Eye of Ender
-    </label>
-    <label>
-        <input type="radio" name="q1" value="tnt"> TNT
-    </label>
-    <label>
-        <input type="radio" name="q1" value="enderpearl"> Ender Pearl
-    </label>
+    <div id="quiz">
+        <p class="question" id="question1"> <span id="q1Icon"> </span> 1. What item do you use to open the End Portal?</p>
+        <div id="question1Options"></div>
 
-    <p id="question2">2. What's the name of the main character?</p>
-    <label>
-        <input type="text" id="q2">
-    </label>
+        <p class="question" id="question2"> <span id="q2Icon"></span> 2. What's the name of the main character?</p> 
+        <label>
+            <input type="text" id="q2">
+        </label>
 
-    <p id="question3">3. Which of these entities explode?</p>
-    <label>
-        <select id="q3">
-            <option value="default">Pick an Entity</option>
-            <option value="sheep">Sheep</option>
-            <option value="enderman">Enderman</option>
-            <option value="creeper">Creeper</option>
-            <option value="parrot">Parrot</option>
-        </select>
-    </label>
-    
-    <p id="question4">4. How many blocks can be in a stack?</p>
-    <label>
-        <input type="number" id="q4" min="1" max="100">
-    </label>
+        <p class="question" id="question3"> <span id="q3Icon"></span> 3. Which of these entities explode?</p> 
+        <label>
+            <select id="q3">
+                <option value="default">Pick an Entity</option>
+                <option value="sheep">Sheep</option>
+                <option value="enderman">Enderman</option>
+                <option value="creeper">Creeper</option>
+                <option value="parrot">Parrot</option>
+            </select>
+        </label>
+        
+        <p class="question" id="question4"> <span id="q4Icon"></span> 4. How many blocks can be in a stack?</p> 
+        <label>
+            <input type="number" id="q4" min="1" max="100">
+        </label>
 
-    <p id="question5">5. What is a famous line from the Minecraft Movie?</p>
-    <label>
-        <input type="checkbox" id="steve" value="correct"> "I am Steve."
-    </label>
-    <label>
-        <input type="checkbox" id="nameissteve" value="wrong"> "My name is Steve."
-    </label>
-    <label>
-        <input type="checkbox" id="chickenjockey" value="correct"> "Chicken Jockey."
-    </label>
-    <label>
-        <input type="checkbox" id="minecraft" value="wrong"> "Together we are Minecraft!"
-    </label>
+        <p class="question" id="question5"> <span id="q5Icon"></span> 5. What is a famous line from the Minecraft Movie?</p> 
+        <label>
+            <input type="checkbox" id="steve" value="correct"> "I am Steve."
+        </label>
+        <label>
+            <input type="checkbox" id="nameissteve" value="wrong"> "My name is Steve."
+        </label>
+        <label>
+            <input type="checkbox" id="chickenjockey" value="correct"> "Chicken Jockey."
+        </label>
+        <label>
+            <input type="checkbox" id="minecraft" value="wrong"> "Together we are Minecraft!"
+        </label>
 
-    <br>
+        <br>
 
-    <button>Submit Quiz</button>
+        <button>Submit Quiz</button>
+    </div>
 
-    <h2 id="totalscore"></h2>
+    <div id="score">
+        <h2>Score: <span id="totalscore"></span></h2>
+        <h2 id="feedback"></h2>
+    </div>
 </body>
 </html>
