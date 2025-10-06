@@ -4,51 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab4: Sign Up Page </title>
+    <title>Lab 4: Sign Up Page </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <h1> Sign Up Form </h1>
 
-    <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
+    <div id="signupForm">
+        <fieldset>
+            <legend>Sign Up</legend>
+            First Name: <input type="text"><br>
 
-        Last Name: <input type="text"><br>
+            Last Name: <input type="text"><br>
 
-        Email: <input type="text"><br>
+            Email: <input type="text"><br>
 
-        Phone Number:<input type="text"><br><br>
+            Phone Number:<input type="text"><br><br>
 
-        Zip Code: <input id="zip" type="text">
-        <span id="zipFeedback"></span>
-        <br>
+            Zip Code: <input id="zip" type="text">
+            <span id="zipFeedback"></span>
+            <br>
 
-        City: <span id="city"></span>
-        <br>
+            City: <span id="city"></span>
+            <br>
 
-        Latitude: <span id="latitude"></span>
-        <br>
+            Latitude: <span id="latitude"></span>
+            <br>
 
-        Longitude: <span id="longitude"></span>
-        <br><br>
+            Longitude: <span id="longitude"></span>
+            <br><br>
 
-        State: <select id="states"></select><br>
+            State: <select id="states"></select><br>
 
-        Select a County: <select id="county"></select><br>
+            Select a County: <select id="county"></select><br>
 
-        Desired Username: <input id="username" type="text"> <span id="available"></span>
-        <br> 
+            Desired Username: <input id="username" type="text"> <span id="available"></span>
+            <br> 
 
-        Password: <input id="password" type="password"> <span id="suggestedPassword"></span>
-        <br>
+            Password: <input id="password" type="password"> <span id="suggestedPassword"></span>
+            <br>
 
-        Type Password Again: <input id="retypePassword" type="password"><br>
+            Type Password Again: <input id="retypePassword" type="password"><br>
 
-        <input id="submit" type="submit" value="Sign up!">
-        <br>
-        <p id="feedback"></p>
-    </fieldset>
+            <input id="submit" type="submit" value="Sign up!">
+            <br>
+            <div id="feedback"></div>
+        </fieldset>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

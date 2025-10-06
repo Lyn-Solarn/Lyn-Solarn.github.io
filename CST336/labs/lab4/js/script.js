@@ -125,24 +125,28 @@ async function displayAvailablity() {
 }
 
 function validateForm() {
-    let errorMessage = '';
+    let feedback = document.querySelector("#feedback");
+    feedback.innerHTML = "";
+    let error = false;
 
     if (!usernameCheck()) {
-        errorMessage += "-- Username needs to be at least 3 characters ";
+        feedback.innerHTML += "-- Username needs to be at least 3 characters<br>";
+        error = true;
     }
     if (!passwordCheck()) {
-        errorMessage += "-- Password needs to be at least 6 characters ";
+        feedback.innerHTML += "-- Password needs to be at least 6 characters<br>";
+        error = true;
     }
     if (!retypePasswordCheck()) {
-        errorMessage += "-- Passwords do not match ";
+        feedback.innerHTML += "-- Passwords do not match<br>";
+        error = true;
     }
 
-    if (errorMessage.length > 0) {
-        document.querySelector("#feedback").textContent = errorMessage;
-        document.querySelector("#feedback").style.color = "red";
+    if (error) {
+        feedback.style.color = "red";
     } else {
-        document.querySelector("#feedback").textContent = "Sign-Up Completed!";
-        document.querySelector("#feedback").style.color = "green";
+        feedback.innerHTML = "Sign Up Completed!";
+        feedback.style.color = "green";
     }
 }
 
