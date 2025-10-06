@@ -1,0 +1,17 @@
+#quoteContainer {
+    width: 75%;
+}
+
+#quote {
+    text-align: center;
+}
+
+#author {
+    display: none;
+    justify-content: space-around;
+    width: 75%;
+}
+
+#authorImage {
+    width: 150px;
+}

@@ -3,7 +3,7 @@ document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#password").addEventListener("focus", displayPassword);
 document.querySelector("#username").addEventListener("change", displayAvailablity);
 document.querySelector("#states").addEventListener("change", displayCounty);
-document.querySelector("#submit").addEventListener("click", passwordCheck);
+document.querySelector("#submit").addEventListener("click", validateForm);
 
 displayStates();
 
@@ -16,9 +16,21 @@ async function displayCity() {
         try {
             let data = await response.json();
             //console.log(data);
-            document.querySelector("#city").textContent = data.city;
-            document.querySelector("#latitude").textContent = data.latitude;
-            document.querySelector("#longitude").textContent = data.longitude;
+            if (data) {
+                document.querySelector("#zipFeedback").textContent = '';
+
+                document.querySelector("#city").textContent = data.city;
+                document.querySelector("#latitude").textContent = data.latitude;
+                document.querySelector("#longitude").textContent = data.longitude;
+            } else {
+                document.querySelector("#zipFeedback").textContent = "Zipcode not found.";
+                document.querySelector("#zipFeedback").style.color = "red";
+
+                document.querySelector("#city").textContent = '';
+                document.querySelector("#latitude").textContent = '';
+                document.querySelector("#longitude").textContent = '';
+            }
+            
         } catch(parseError) {
             console.log("JSON Parsing Error: " + parseError);
         }
@@ -112,13 +124,55 @@ async function displayAvailablity() {
     }  
 }
 
+function validateForm() {
+    let errorMessage = '';
+
+    if (!usernameCheck()) {
+        errorMessage += "-- Username needs to be at least 3 characters ";
+    }
+    if (!passwordCheck()) {
+        errorMessage += "-- Password needs to be at least 6 characters ";
+    }
+    if (!retypePasswordCheck()) {
+        errorMessage += "-- Passwords do not match ";
+    }
+
+    if (errorMessage.length > 0) {
+        document.querySelector("#feedback").textContent = errorMessage;
+        document.querySelector("#feedback").style.color = "red";
+    } else {
+        document.querySelector("#feedback").textContent = "Sign-Up Completed!";
+        document.querySelector("#feedback").style.color = "green";
+    }
+}
+
+function usernameCheck() {
+    let username = document.querySelector("#username").value;
+
+    if (username.length >= 3) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function passwordCheck() {
     let password = document.querySelector("#password").value;
 
-    if (password.length < 6) {
-        document.querySelector("#feedback").textContent = "Password is not long enough!";
-        document.querySelector("#feedback").style.color = "red";
+    if (password.length >= 6) {
+        return true;
     } else {
-        document.querySelector("#feedback").textContent = '';
+        return false;
+    }
+}
+
+function retypePasswordCheck() {
+    let password = document.querySelector("#password").value;
+    let retypePassword = document.querySelector("#retypePassword").value;
+
+    if (password == retypePassword) {
+        return true;
+    } else {
+        return false;
     }
 }
