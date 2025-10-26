@@ -1,0 +1,50 @@
+#title {
+    padding: 2%;
+    color: whitesmoke;
+    background-image: url('../images/galaxy.jpg');
+    background-size: cover;
+}
+
+body {
+    background-image: url('../images/galaxy.jpg');
+    background-size: cover;
+}
+
+#homepage, .pageContent{
+    width: min-content;
+    margin: .5% auto;
+    padding: 2%;
+    border: #212529 solid;
+    background-color: rgba(240, 248, 255, 0.10);
+    backdrop-filter: blur(1px);
+}
+
+img {
+    border: #08090a solid;
+}
+
+.pageContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    width: 75%;
+}
+
+.columnLeft {
+    width: 50%;
+    color: whitesmoke;
+}
+
+.columnRight {
+    width: 45%;
+    text-align: center;
+}
+
+.columnRight img{
+    width: 100%;
+}
+
+#comingSoon {
+    margin: 0 auto;
+    color: whitesmoke;
+}

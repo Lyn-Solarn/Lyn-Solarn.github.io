@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include("partials/head.ejs") %>
+</head>
+<body>
+
+    <%-include("partials/nav.ejs") %>
+
+    <div class="pageContent">
+      <div class="columnLeft">
+        <h2>Comets</h2>
+        <p><%=cometInfo.def%></p>
+      </div>
+      
+      <div class="columnRight">
+        <img src="<%=cometInfo.image%>" width="300">
+      </div>
+    </div>
+
+    <%-include("partials/footer.ejs") %>
+</body>
+</html>

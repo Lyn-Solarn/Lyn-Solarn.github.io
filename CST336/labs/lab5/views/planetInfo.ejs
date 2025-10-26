@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include("partials/head.ejs") %>
+</head>
+<body>
+
+    <%-include("partials/nav.ejs") %>
+
+    <div class="pageContent">
+      <div class="columnLeft">
+        <h2><%=planet_name%></h2>
+        <%=planetInfo.description%>
+        <br> <br>
+        <p><strong>Distance from Sun:</strong> <%=planetInfo.distanceFromSun%></p>
+        <p><strong>Year Length:</strong> <%=planetInfo.yearLength%></p>
+        <p><strong>Radius:</strong> <%=planetInfo.radius%></p>
+        <p><strong>One Earth Day:</strong> <%=planetInfo.oneEarthDay%></p>
+        <p><strong>Number of Moons:</strong> <%=planetInfo.moons%></p>
+      </div>
+      
+      <div class="columnRight">
+        <img src="<%=planetInfo.image%>">
+      </div>
+    </div>
+
+    <%-include("partials/footer.ejs") %>
+</body>
+</html>
